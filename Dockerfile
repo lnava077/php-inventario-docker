@@ -36,6 +36,8 @@ COPY . /app
 
 # Configuramos la configuración de Laravel
 #COPY .env .env
+COPY .env.example .env
+
 RUN php artisan key:generate
 RUN php artisan config:clear
 #RUN php artisan migrate --seed
