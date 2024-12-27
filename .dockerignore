@@ -1,0 +1,25 @@
+# Ignorar archivos y carpetas
+
+# Archivos de configuración
+config.json
+settings.xml
+
+# Archivos de compilación
+build/
+dist/
+
+# Archivos de dependencias
+node_modules/
+vendor/
+
+# Archivos de logs
+logs/
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Otros archivos y carpetas que desees ignorar
+temp/
+backup/
