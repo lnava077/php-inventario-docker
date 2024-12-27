@@ -26,6 +26,14 @@ jobs:
         echo "Iniciando login"
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "Fin del login."
+
+    - name: Build Docker Image
+      run: |
+        docker build -t lnava377/inventario-php:1.0.1 .
+
+    - name: Push Docker Image
+      run: |
+        docker push lnava377/inventario-php:1.0.1 .
       
    # - name: Build the Docker image
     #  run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
